@@ -1,5 +1,161 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
 *{
     margin: 0px;
     padding: 0px;
+}
+
+:root{
+    --cor-1:#041C32;
+    --cor-2:#04293A;
+    --cor-3:#064663;
+    --cor-4:#ECB365;
+    --fonte-1:'Roboto', sans-serif;;
+}
+
+html{
+    background-color: var(--cor-1);
+    color: white;
+    font-family: var(--fonte-1);
+}
+
+
+
+header{    
+    border-bottom: 1px solid var(--cor-4);
+    
+}
+
+header menu{
+    width: 90%;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header menu ul{
+    display: flex;    
+
+}
+
+header ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+header ul li a, a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    
+}
+
+header menu>a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;    
+}
+
+header menu a:hover{
+    color: var(--cor-4);
+}
+
+.banner{    
+    display: flex;  
+    justify-content: space-evenly;
+    align-items: center;       
+    margin-top: 50px;
+    height: 500px;
+
+}
+
+#meuNome{
+    color: var(--cor-4);
+}
+
+.banner-1 h2{
+    font-weight: 500;
+    font-size: 3em;    
+}
+
+.banner-1 h3{
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #ceb898;
+}
+
+.banner-1_buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.banner-1_buttons button{
+    padding: 10px 20px;
+    margin: 0 20px 0 0;
+    border-radius: 20px;
+    border: 1px solid var(--cor-3);
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.banner-1_buttons button:hover{
+    background-color: #04293A;
+    transition: .5s;    
+    color: var(--cor-4);
+}
+
+
+
+.banner-2{
+    display: flex;
+    justify-content: center;
+}
+
+.banner-2 img{
+    width: 90%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    
+}
+
+
+.banner-2 img:hover{
+    width: 95%;
+    transition: .5s;
+    cursor: pointer;
+    border: 2px solid var(--cor-3);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.banner-2 img:not(:hover){
+    transition: .5s;
+}
+
+.section-sobreMim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-sobreMim h2{
+    text-align: center;
+    font-size: 2em;
+    padding: 20px;
+}
+
+.section-sobreMim p{    
+    max-width: 900px;    
+    margin: 0 auto;
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 30px;
+    color: rgb(218, 214, 214);
 }
