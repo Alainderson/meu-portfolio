@@ -13,7 +13,8 @@
     --cor-2:#04293A;
     --cor-3:#064663;
     --cor-4:#ECB365;
-    --fonte-1:'Roboto', sans-serif;;
+    --fonte-1:'Roboto', sans-serif;
+
 }
 
 html{
@@ -106,9 +107,9 @@ header menu a:hover{
     cursor: pointer;
 }
 
-.banner-1_buttons button:hover{
-    background-color: #04293A;
-    transition: .5s;    
+.banner-1_buttons button:hover,.banner-1_buttons button a:hover{
+    background-color: #04293A;    
+    transition: .5s;        
     color: var(--cor-4);
 }
 
@@ -151,7 +152,8 @@ header menu a:hover{
     padding: 20px;
 }
 
-.section-sobreMim p{    
+.section-sobreMim p{  
+    width: 80%;  
     max-width: 900px;    
     margin: 0 auto;
     font-size: 1.3em;
