@@ -23,6 +23,12 @@ html{
     font-family: var(--fonte-1);
 }
 
+main{
+    width: 80%;
+    min-width: 600px;
+    margin: 0 auto;
+}
+
 
 
 header{    
@@ -107,10 +113,18 @@ header menu a:hover{
     cursor: pointer;
 }
 
-.banner-1_buttons button:hover,.banner-1_buttons button a:hover{
+.banner-1_buttons button:hover{
     background-color: #04293A;    
     transition: .5s;        
     color: var(--cor-4);
+    border: 1px solid var(--cor-4);
+}
+
+.banner-1_buttons button a:hover{
+    background-color: #04293A;    
+    transition: .5s;        
+    color: var(--cor-4);
+    
 }
 
 
@@ -131,9 +145,8 @@ header menu a:hover{
 .banner-2 img:hover{
     width: 95%;
     transition: .5s;
-    cursor: pointer;
-    border: 2px solid var(--cor-3);
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border: 1px solid var(--cor-4);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .banner-2 img:not(:hover){
@@ -148,7 +161,7 @@ header menu a:hover{
 
 .section-sobreMim h2{
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     padding: 20px;
 }
 
@@ -160,4 +173,109 @@ header menu a:hover{
     text-align: justify;
     line-height: 30px;
     color: rgb(218, 214, 214);
+}
+
+.tecnologias{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.section-tecnologias h2{    
+    text-align: center;
+    font-size: 3em;
+    padding: 100px 0 80px 0;
+}
+
+.border-card{
+    width: 150px;
+    height: 150px;
+    background-color: var(--cor-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card{
+    background-color: var(--cor-2);
+    width: 95%;
+    height: 115%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+    gap: 10px;    
+    border: 1px solid var(--cor-4);
+    
+}
+
+.card:hover{
+    background-color: var(--cor-3);
+    width: 93%;
+    height: 110%;
+    transition: .5s;
+}
+.card:not(:hover){
+    transition: .5s;
+}
+
+.card p{
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.card img{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-contato{
+    margin-top: 80px;
+}
+
+.section-contato h2{
+    text-align: center;
+    font-size: 3em;
+    padding: 100px 0 80px 0;
+}
+
+.contatos{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contato{
+    width: 120px;
+    height: 140px;    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--cor-2);
+    border: 1px solid var(--cor-4);
+    border-radius: 10px;
+}
+
+.contato:hover{
+    width: 110px;
+    height: 130px;
+    background-color: var(--cor-3);
+    transition: .5s;
+}
+
+.contato a img{
+    width: 70%;
+    margin: 0;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border-top: 1px solid var(--cor-4);
+    margin-top: 150px;
 }
