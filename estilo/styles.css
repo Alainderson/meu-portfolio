@@ -287,3 +287,8 @@ footer{
     border-top: 1px solid var(--cor-4);
     margin-top: 150px;
 }
+
+#emcontato{
+    text-decoration: underline;
+    font-weight: normal;
+}
